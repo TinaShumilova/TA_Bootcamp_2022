@@ -40,6 +40,7 @@ public class NumToWords {
             case 10:
                 System.out.println("ten");
                 break;
+            default: System.out.println("NULL");
         }
 
     }
