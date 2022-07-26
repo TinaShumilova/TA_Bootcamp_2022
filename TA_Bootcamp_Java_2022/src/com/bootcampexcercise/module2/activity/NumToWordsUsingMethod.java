@@ -11,6 +11,6 @@ public class NumToWordsUsingMethod {
 
     public static void main(String[] args) {
         NumToWords collingTaskFive = new NumToWords();
-        collingTaskFive.numberInLetter(5);
+        collingTaskFive.printMyWord(6);
     }
 }

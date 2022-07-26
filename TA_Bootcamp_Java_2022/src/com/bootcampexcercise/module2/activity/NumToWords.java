@@ -4,11 +4,11 @@ public class NumToWords {
     public static void main(String[] args) {
 
         int x = 5;
-        numberInLetter(x);
+        printMyWord(x);
 
 
     }
-    public static void numberInLetter(int a){
+    public static void printMyWord(int a){
         switch (a){
             case 1:
                 System.out.println("one");
