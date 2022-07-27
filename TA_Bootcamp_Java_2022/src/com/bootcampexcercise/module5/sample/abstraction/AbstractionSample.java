@@ -5,7 +5,7 @@ public class AbstractionSample {
 
         // Person_A is abstract class so cannot be instantiated. Following gives error
 //		 Person_A p = new Person_A();
-        System.out.println("1---------------------------");
+        System.out.println("---------------------------");
         Person_A pE = new Employee_A();
         pE.setAge(21);
         pE.setName("Smith");
