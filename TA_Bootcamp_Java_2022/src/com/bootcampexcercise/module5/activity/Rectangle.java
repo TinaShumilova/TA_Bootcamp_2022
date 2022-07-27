@@ -5,8 +5,6 @@ public class Rectangle extends Shape{
 
     private double length = 0.0;
     private double breadth = 0.0;
-    private double area;
-    private double perimeter;
 
     public Rectangle(){
         this.length = 0.0;
@@ -14,18 +12,18 @@ public class Rectangle extends Shape{
         System.out.println("This is rectangle");
     }
 
-    public double getLength() {
+    /*public double getLength() {
         return length;
     }
-
+*/
     public void setLength(double length){
         this.length = length;
     }
-
+/*
     public double getBreadth(){
         return breadth;
     }
-
+*/
     public void setBreadth(double breadth) {
         this.breadth = breadth;
     }

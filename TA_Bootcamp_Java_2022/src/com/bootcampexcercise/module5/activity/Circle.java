@@ -6,19 +6,13 @@ public class Circle extends Shape{
 
     private double pi = 3.14;
 
-    private double area;
-
-    private double perimeter;
-
-    private String color;
-
     public Circle(){
         System.out.println("This is circle");
     }
-    public double getRadius() {
+    /*public double getRadius() {
         return radius;
     }
-
+*/
     public void setRadius(double radius) {
         this.radius = radius;
     }
