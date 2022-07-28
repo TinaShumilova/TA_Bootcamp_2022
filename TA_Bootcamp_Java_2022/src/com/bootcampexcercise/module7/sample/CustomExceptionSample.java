@@ -19,7 +19,8 @@ public class CustomExceptionSample {
         //Since CustomException is a checked exception, it's mandatory to call setAge method
 
         //2 - call setAge method with -1 as its parameter and surround this with a try catch block
-//			setAge(8);
+
+//			setAge(-8);
         // above line gives error without throws
 //        try {
 //            setAge(-9);
@@ -27,7 +28,7 @@ public class CustomExceptionSample {
 //            System.out.println(c.getMessage());
 //            System.out.println("Catch custom exception");
 //
-//        }
-
+//       }
+//
     }
 }

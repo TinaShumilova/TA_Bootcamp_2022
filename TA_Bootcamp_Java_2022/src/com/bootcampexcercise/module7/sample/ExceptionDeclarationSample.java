@@ -13,6 +13,7 @@ public class ExceptionDeclarationSample {
 
     public static void main(String arg[]) {
         //2 - Call setAge with a negative parameter
-        setAge(-7);
+        setAge(7);
+        System.out.println("Stop");
     }
 }

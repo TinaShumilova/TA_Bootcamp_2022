@@ -8,7 +8,7 @@ public class CheckedExceptionSample {
     public static void main(String arg[]) {
 
         String fileName = "M0 - Setting up Envrionment.pptx";
-//        String fileName = "Presentations/M0 - Setting up Envrionment.pptx";
+        //String fileName = "Presentations/M0 - Setting up Envrionment.pptx";
 
         //The following class is used to open a file for reading
         FileReader reader;
