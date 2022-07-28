@@ -32,11 +32,21 @@ public class PersonTest extends TestCase {
 
     }
 
-    public void getBodyMassIndex(){
+    public void testGetBodyMassIndex(){
         int a = 100;
         float b = 172.2f;
-        String c = "33.7";
+        String c = "0.0033723584";
         assertEquals(c, person.humanBodyMassIndex(a, b));
+
+        int a2 = -100;
+        float b2 = -172.2f;
+        String c2 = "Please get me information";
+        assertEquals(c2, person.humanBodyMassIndex(a2, b2));
+
+        int a3 = 700;
+        float b3 = 300f;
+        String c3 = "It is impossible";
+        assertEquals(c3, person.humanBodyMassIndex(a3, b3));
 
     }
 }

@@ -24,16 +24,18 @@ public class Person {
     }
 
 
-    //TODO: Create a method to calculate humans body mass index with two parameters for height and weight
     public String humanBodyMassIndex(int weight, float height){
-        float bmi = weight/(height*height);
-        return String.valueOf(bmi);
+        float bmi = 0.0f;
+
+        if (weight>0&&height>0.0f&&weight<=635&&height<=251){
+            bmi = weight/(height*height);
+            return String.valueOf(bmi);
+        }else if (weight>632 &&height>251){
+            return "It is impossible";
+
+        }else {
+            return "Please get me information";
+        }
     }
-    //TODO: return String which indicates persons BMI. Calculation should be used weight/(height*height)
-
-
-
-    // TODO: Please add some checks for max weight and height (kg and meter are their units)
-    //TODO: Also add some checks that value shouldn't be negative and 0
-//    Note: All TODOs should be implemented in single method
+    
 }
