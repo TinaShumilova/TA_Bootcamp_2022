@@ -6,6 +6,7 @@ public class ArithmeticExceptionActivity {
 
         ArithmeticExceptionActivity obj = new ArithmeticExceptionActivity();
         obj.catchMe(10, 0);
+        obj.catchMe(10, 2);
     }
 
     void catchMe(int num1, int num2) {
