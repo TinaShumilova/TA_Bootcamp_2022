@@ -48,5 +48,20 @@ public class PersonTest extends TestCase {
         String c3 = "It is impossible";
         assertEquals(c3, person.humanBodyMassIndex(a3, b3));
 
+        int a4 = -700;
+        float b4 = 100f;
+        String c4 = "Please get me information";
+        assertEquals(c4, person.humanBodyMassIndex(a4, b4));
+
+        int a5 = 100;
+        float b5 = 300f;
+        String c5 = "Please get me information";
+        assertEquals(c5, person.humanBodyMassIndex(a5, b5));
+
+        int a6 = 0;
+        float b6 = 0f;
+        String c6 = "Please get me information";
+        assertEquals(c6, person.humanBodyMassIndex(a6, b6));
+
     }
 }

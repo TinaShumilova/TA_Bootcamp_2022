@@ -24,18 +24,17 @@ public class Person {
     }
 
 
-    public String humanBodyMassIndex(int weight, float height){
+    public String humanBodyMassIndex(int weight, float height) {
         float bmi = 0.0f;
 
-        if (weight>0&&height>0.0f&&weight<=635&&height<=251){
-            bmi = weight/(height*height);
+        if (weight > 0 && height > 0.0f && weight <= 635 && height <= 251) {
+            bmi = weight / (height * height);
             return String.valueOf(bmi);
-        }else if (weight>632 &&height>251){
+        } else if (weight > 632 && height > 251) {
             return "It is impossible";
-
-        }else {
+        } else {
             return "Please get me information";
         }
     }
-    
+
 }
