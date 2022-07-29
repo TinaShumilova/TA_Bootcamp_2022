@@ -5,12 +5,11 @@ public class AbstractActivity {
 
         Employee newEmployee = new Employee();
         Students newStudent = new Students();
-        
+
         System.out.println("***** Introduce from employee *****");
         newEmployee.introducePerson();
         System.out.println("***** Introduce from student *****");
         newStudent.introducePerson();
-
 
     }
 }
