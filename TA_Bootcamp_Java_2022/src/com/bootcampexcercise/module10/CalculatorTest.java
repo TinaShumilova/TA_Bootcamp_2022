@@ -2,7 +2,7 @@ package com.bootcampexcercise.module10;
 
 import junit.framework.TestCase;
 
-public class CalculatorTes extends TestCase {
+public class CalculatorTest extends TestCase {
 
     private Calculator numbers;
 
