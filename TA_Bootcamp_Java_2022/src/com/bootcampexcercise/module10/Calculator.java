@@ -4,17 +4,17 @@ import com.bootcampexcercise.module7.sample.CustomException;
 
 public class Calculator {
 
-public static void main(String[] args) {
-      Calculator obj = new Calculator();
-//        try {
-//            System.out.println(obj.getProduct(5,2));
-//        } catch (CustomExceptions c) {
-//            System.out.println(c.getMessage());
-//        }
-        System.out.println(obj.getQuotient(2,20));
-    System.out.println(2.0/20.0);
-
- }
+//public static void main(String[] args) {
+//      Calculator obj = new Calculator();
+////        try {
+////            System.out.println(obj.getProduct(5,2));
+////        } catch (CustomExceptions c) {
+////            System.out.println(c.getMessage());
+////        }
+//        System.out.println(obj.getQuotient(2,20));
+//    System.out.println(2.0/20.0);
+//
+// }
 
     public int getSum(int a, int b) {
         return a + b;
