@@ -1,6 +1,5 @@
 package com.bootcampexcercise.module10;
 
-import com.bootcampexcercise.module7.sample.CustomException;
 
 public class Calculator {
 
