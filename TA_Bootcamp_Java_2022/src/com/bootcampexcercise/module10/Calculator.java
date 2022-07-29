@@ -4,17 +4,6 @@ import com.bootcampexcercise.module7.sample.CustomException;
 
 public class Calculator {
 
-//public static void main(String[] args) {
-//      Calculator obj = new Calculator();
-////        try {
-////            System.out.println(obj.getProduct(5,2));
-////        } catch (CustomExceptions c) {
-////            System.out.println(c.getMessage());
-////        }
-//        System.out.println(obj.getQuotient(2,20));
-//    System.out.println(2.0/20.0);
-//
-// }
 
     public int getSum(int a, int b) {
         return a + b;
@@ -39,16 +28,19 @@ public class Calculator {
 
     public String getQuotient(int a, int b) {
         double result = 0.0;
-        try {
-            result = (a / b);
+        if (a == 0 || b == 0) {
+            try {
+                return String.valueOf(a / b);
+            } catch (ArithmeticException e) {
+                return "Division by zero is not allowed";
+            }
+        } else {
+            double c = Double.valueOf(a);
+            double d = Double.valueOf(b);
+            result = (c / d);
             return String.valueOf(result);
-        } catch (ArithmeticException e) {
-            return "Division by zero is not allowed";
         }
 
     }
-
-
-
 
 }

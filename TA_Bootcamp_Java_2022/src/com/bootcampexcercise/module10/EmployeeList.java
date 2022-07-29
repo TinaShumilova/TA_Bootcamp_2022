@@ -1,6 +1,5 @@
 package com.bootcampexcercise.module10;
 
-
 import java.util.List;
 import java.util.ArrayList;
 
@@ -28,8 +27,6 @@ public class EmployeeList {
 
         Employee obj = new Employee();
         System.out.println("The Employee whose salary is the highest is : " + obj.getHighestPaidEmp(empList));
-
-
 
     }
 

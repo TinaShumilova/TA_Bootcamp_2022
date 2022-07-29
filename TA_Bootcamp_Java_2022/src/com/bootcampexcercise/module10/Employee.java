@@ -1,6 +1,5 @@
 package com.bootcampexcercise.module10;
 
-
 import java.util.List;
 public class Employee extends Person{
 
@@ -51,10 +50,9 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
-    @Override
     public void introducePerson() {
         System.out.println("My name is " + getName() + " and i am " + getAge() + " years old");
-        System.out.println("I work as " + this.jobTitle +" in " + this.company + " and my salary is " + this.salary);
+        System.out.println("I work as " + getJobTitle() +" in " + getCompany() + " and my salary is " + getSalary());
 
     }
 

@@ -13,8 +13,7 @@ public class Students extends Person{
     }
 
 
-    @Override
     public void introducePerson() {
-        System.out.println("I study in university " + this.schoolName);
+        System.out.println("I study in university " + getSchoolName());
     }
 }

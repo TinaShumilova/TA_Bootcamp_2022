@@ -64,11 +64,6 @@ public class CalculatorTest extends TestCase {
         assertEquals(12, numbers.getProduct(a, b));
         assertEquals(12, numbers.getProduct(b, a));
 
-        a = 5;
-        b = 0;
-        //assertEquals("The result of multiplying by zero is always zero", numbers.getProduct(a, b));
-        //assertEquals("The result of multiplying by zero is always zero", numbers.getProduct(b, a));
-
         a = -10;
         b = -50;
         assertEquals(500, numbers.getProduct(a, b));
@@ -81,15 +76,24 @@ public class CalculatorTest extends TestCase {
     }
 
     public void testGetQuotient() {
-        int a = 20;
+        int a = 30;
         int b = 2;
-        assertEquals("10.0", numbers.getQuotient(a, b));
-        assertEquals("0.0", numbers.getQuotient(b, a));
+        assertEquals("15.0", numbers.getQuotient(a, b));
+        assertEquals("0.06666666666666667", numbers.getQuotient(b, a));
 
         a = 0;
         b = 10;
-        assertEquals("0.0", numbers.getQuotient(a, b));
+        assertEquals("0", numbers.getQuotient(a, b));
         assertEquals("Division by zero is not allowed", numbers.getQuotient(b, a));
 
+    }
+
+    public void testThrowException()throws CustomExceptions {
+        try{
+            numbers.getProduct(0, 5);
+            numbers.getProduct(6,0);
+        } catch (CustomExceptions e){
+            System.out.println(e.getMessage());
+        }
     }
 }

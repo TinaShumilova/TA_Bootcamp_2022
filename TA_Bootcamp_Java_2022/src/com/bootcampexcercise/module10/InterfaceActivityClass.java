@@ -9,6 +9,5 @@ public class InterfaceActivityClass {
         bike.stop();
         car.start();
         car.stop();
-
     }
 }
